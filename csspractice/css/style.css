@@ -1,0 +1,26 @@
+/*
+Hunter Evans
+12 April 2023
+*/
+
+header{
+  background-color:aquamarine;
+}
+footer{
+  background-color:aquamarine;
+}
+p,ul,li{
+  font-size: 20px;
+}
+a:link{
+  color:darkmagenta;
+}
+a:visited{
+  color:crimson;
+}
+a:hover{
+  color:darkgreen;
+}
+a:active{
+  color:gold;
+}
