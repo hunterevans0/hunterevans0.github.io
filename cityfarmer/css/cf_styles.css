@@ -1,0 +1,50 @@
+/*
+Hunter Evans
+13 April 2023
+*/
+#outerwrapper{
+  width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+body{
+  background-color: #B8D1EB;
+  color: #000000;
+  font-family: "Times New Roman", Times, serif;
+}
+.floatleft{ 
+  float: left;
+  margin-right: 3%;
+}
+.floatright{
+  float: right;
+  margin-left: 3%;
+}
+main{
+  background-color: #C5A98B;
+  padding: 10px;
+}
+main, footer{ 
+  clear: both;
+
+}
+nav ul{
+  list-style-type: none;
+}
+h1{
+  font-family: "Courier New", Courier, monospace;
+}
+h2{
+  font-family:  Arial, Helvetica, serif;
+  font-weight: normal;
+  font-style: italic;
+}
+main ul{
+  list-style-image: url(../images/tomato.png);
+}
+footer{
+  font-size: .75em;
+  text-align: center;
+  background-color: #917a5c;
+  padding: 10px 0px 10px 0px;
+}
