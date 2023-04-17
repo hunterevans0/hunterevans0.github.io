@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<!--
+Hunter Evans
+17 April 2023
+-->
+<html lang="en">
+<head>
+  <title>Contact Form</title>
+  <meta name="author" content="Hunter Evans">
+  <meta charset="UTF-8">
+  <meta name="description" content="Hunter Evans web developer Boise Idaho">
+  <meta name="keywords" content="client-side server-side C# HTML CSS JavaScript">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  div {
+    margin: 10px;
+  }
+  label {
+    margin-right: 15px;
+    width: 150px;
+    display: inline-block;
+  }
+  </style>
+</head>
+<body>
+  <form action="mailto:hunterevans@my.cwi.edu?subject=Personal%20Portfolio%20Mail" enctype="text/plain" method="POST">
+    <!-- Group Fields Together, page 104 -->
+    <fieldset>
+    <legend>How do I contact you?</legend>
+      <!-- Company Select Box, page 97 -->
+      <div>
+        <label for="company">Company:</label> <br> <input type="text" name="company" id="company" size="50"
+        placeholder="Your Company Name" required>
+      </div>
+      <!-- Person to Contact Select Box, page 97 -->
+      <div>
+        <label for="person_to_contact">Person to contact:</label> <br> <input type="text" name="person_to_contact" id="person_to_contact" size="30"
+        placeholder="Your Contact Name" required>
+      </div>
+      <!-- Email, textbook file rental.html -->	
+      <!--Video 9.9 Building and Testing a Valid Form-->	
+      <div>
+        <label for="email">Email:</label> <input type="email" name="email" id="email"
+        placeholder="example@email.com" required>
+      </div>
+      <!-- Phone, textbook file rental.html-->
+      <!--Video 9.9 Building and Testing a Valid Form-->
+      <div>
+        <label for="phone">Phone Number:</label> <input type="tel" name="phone" id="phone" pattern=
+        "[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="###-###-####" required>
+      </div>
+    </fieldset>
+    <!-- Group Fields Together, page 104 -->
+    <fieldset>
+      <legend>What opportunities are available at your company?</legend>
+      <!-- Select Box, page 98 -->
+        <label for="position">Type of Position:</label> 
+        <select name="position" id="position" required>
+          <option value="Internship">Internship</option>
+          <option value="Employee">Employee</option>
+        </select> 
+        <br><br>
+      <!-- Radio Buttons, page 99 -->
+      <label for="reference">How did you find me?</label>
+      <br><br>
+      <input type="radio" name="reference" id="linkedin"
+      value="LinkedIn"> <label for="linkedin">LinkedIn</label>
+      <input type="radio" name="reference" id="job-fair"
+      value="Job Fair"> <label for="job-fair">Job Fair</label>
+      <input type="radio" name="reference" id="cwi-corporate-partner"
+      value="CWI Corporate Partner" required> <label for="cwi-corporate-partner">CWI Corporate Partner</label>
+      <div>
+        <!-- Text Area, textbook file code-9-1.html -->
+        <textarea name="textarea" style="width: 750px; height: 150px;" 
+        placeholder="Enter message here." required></textarea>
+      </div>
+    </fieldset>
+	  <input type="submit" id="submit" value="Submit" class="btn">
+  </form>
+</body>
+</html>
