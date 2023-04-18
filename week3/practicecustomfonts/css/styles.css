@@ -1,0 +1,17 @@
+/* Practice CustomFonts Style Sheet */
+/*
+Hunter Evans
+18 April 2023
+*/
+@font-face{
+  font-family: 'Forty Second Street';
+	src: url('../fonts/fortssh_-webfont.woff') format('woff'),
+       url('../fonts/fortssh_-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+	font-family: 'Forty Second Street', Arial, sans-serif;
+  font-size: 20px;
+}
