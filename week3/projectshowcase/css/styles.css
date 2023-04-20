@@ -1,0 +1,14 @@
+/*
+Hunter Evans
+19 April 2023
+*/
+
+body{
+  background: rgb(202, 166, 166);
+}
+hr{
+  height: 1px;
+  border-width: 0;
+  color: black;
+  background-color: black;
+}
