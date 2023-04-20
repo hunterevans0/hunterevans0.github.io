@@ -1,0 +1,61 @@
+/*
+Hunter Evans
+20 April 2023
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Black-webfont.woff');
+  font-weight: normal;
+  font-style: normal;
+}
+header img{
+  float: left;
+  border-radius: 50%;
+}
+#outerwrapper{
+  border-radius: 15%;
+	background: rgba(243, 205, 170, 0.4);
+  width: 70%;
+  margin: auto;
+}
+body{
+  background-image: url("../images/jewelry.jpg");
+  /*Why does this work?*/
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+footer{
+  font-size: 1em;
+  text-align: center;
+  padding-bottom: 10px;
+}
+main{
+  background: linear-gradient(#FFFFFF, #F0F9E6);
+  padding: 10px;
+  margin: 20px;
+  border-radius: 2em;
+  font-size: 1.25em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.addrightmargin{
+  margin-right: 10%;
+}
+nav ul{
+  list-style-type: none;
+  font-size: 1.5em;
+
+}
+nav{
+  clear: float;
+}
+header h1{
+  font-family: 'Pacifico', cursive;
+  font-size: 4em;
+}
+header h2{
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 2em;
+}
