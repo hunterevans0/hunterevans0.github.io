@@ -10,6 +10,7 @@
     <meta name="keywords" content="client-side server-side software developer programmer">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/stylesContact.css">
   </head>
   <body>
     <header>
@@ -26,8 +27,20 @@
       </nav>
     </header>
     <main>
-      <h2>Contact Me</h2>
-      <p>I will graduate <u>winter of 2024</u>. Contact me at <a href="mailto:example@email.com">example@email.com</a> or phone <a href="tel:+12091111111">(209) 111-1111</a> to discuss employment opportunities at your company.</p>
+      <h2>Contact</h2>
+      <form action="mailto:hunterevans@my.cwi.edu?subject=Personal%20Portfolio%20Mail" enctype="text/plain" method="POST">
+          <div>
+            <label for="firstName">First Name:</label> <input type="text" name="firstName" required>
+          </div>
+          <div>
+            <label for="lastName">Last Name:</label> <input type="text" name="lastName" required>
+          </div>
+          <div>
+            <label for="comment">Comment:</label> <textarea name="comment" required></textarea>
+          </div>
+            <input type="submit" value="Submit" class="btn">
+            <input type="reset" value="Reset" class="btn">
+      </form>
     </main>
     <footer>
     <hr>
