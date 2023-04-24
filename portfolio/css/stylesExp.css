@@ -1,0 +1,34 @@
+/*
+Hunter Evans
+19 April 2023
+*/
+
+#flex{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.image{
+  background-color: #444444;
+  border: 1px solid black;
+  margin: 15px;
+  padding: 0px 100px;
+  text-align: center;
+  width: 235px;
+  height: 377px;
+}
+.image img{
+  border: 1px solid black;
+}
+.image h3{
+  background-color: #2f6b9c;
+  padding:12px;
+  border-radius: 15px;
+  transform: rotate(-6deg);
+}
+.image p{
+  padding-bottom: 6px;
+}
+p b{
+  padding-left: 349px;
+}

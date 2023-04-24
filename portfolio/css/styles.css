@@ -1,0 +1,44 @@
+/*
+Hunter Evans
+19 April 2023
+*/
+
+body{
+  background: #1E1E1E;
+  color: #EEEEEE;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px 200px 0px 200px
+}
+hr{
+  height: 1px;
+  border-width: 0;
+  color: #EEEEEE;
+  background-color: #EEEEEE;
+}
+nav a{
+  text-decoration: none;
+}
+a:link{
+  color: #9CDCFE;
+}
+a:visited{
+  color: #9CDCFE;
+}
+a:hover{
+  color: #569CD6;
+} 
+a:active{
+  color: #345f83;
+}
+nav table tr td{
+  float: left;
+  font-size: 22px;
+  margin: 0 15px 0 15px;
+}
+nav table{
+  margin:auto;
+}
+#location{
+  background-color: #569CD6;
+  color: #1E1E1E;
+}
