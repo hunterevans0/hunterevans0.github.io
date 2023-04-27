@@ -16,6 +16,7 @@ div{
 }
 select{
     background-color: #3a3a3a;
+    font-family: Arial, Helvetica, sans-serif;
     color:#ffffff;
     width: 90px;
     height: 25px;
@@ -67,10 +68,6 @@ textarea,div input{
     width: 75px;
     font-size: 15px;
     margin-right: 18px;
-}
-.btn:focus{
-    border: 1px solid #468bc4;
-    outline: none;
 }
 #info{
     font-family: 'Archivo', Arial, sans-serif;
