@@ -35,15 +35,40 @@ Hunter Evans
 
         <h2>Contact Me</h2>
         <form action="mailto:hunterevans@my.cwi.edu?subject=Personal%20Portfolio%20Mail" enctype="text/plain" method="POST">
-            <div>
-                <label for="firstName">First Name:</label> <input type="text" id="firstName" name="firstName" required>
+            <div id="part1">
+                <div>
+                    <label for="compName">Company:</label> <input type="text" id="compName" name="compName" required>
+                </div>
+                <div>
+                    <label for="contactName">Person to Contact:</label> <input type="text" id="contactName" name="contactName" required>
+                </div>
+                <div>
+                    <label for="employment">Type of Position:</label> 
+                    <select name="employment" id="employment" required>
+                        <option value="Intern">Internship</option>
+                        <option value="Part-time">Part-time</option>
+                        <option value="Full-time">Full-time</option>
+                        <option value="Temporary">Temporary</option>
+                        <option value="On call">On call</option>
+                    </select>
+                </div>
             </div>
             <div>
-                <label for="lastName">Last Name:</label> <input type="text" id="lastName" name="lastName" required>
+                <label for="referral">How did you find me?</label>
+                <br><br>
+                <div id="radioItems">
+                    <input type="radio" name="referral" id="linkedin"
+                        value="LinkedIn"> <label for="linkedin" class="radio">LinkedIn</label>
+                    <input type="radio" name="referral" id="job-fair"
+                        value="Job Fair"> <label for="job-fair" class="radio">Job Fair</label>
+                    <input type="radio" name="referral" id="partner"
+                        value="partner" required> <label for="partner" class="radio">CWI Corporate Partner</label>
+                </div>
             </div>
             <div>
                 <label for="comment">Comment:</label> <textarea id="comment" name="comment" required></textarea>
             </div>
+            <h4>* All fields are required *</h4>
             <input type="submit" value="Submit" class="btn">
             <input type="reset" value="Reset" class="btn">
         </form>

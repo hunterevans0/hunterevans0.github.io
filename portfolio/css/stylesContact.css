@@ -14,13 +14,26 @@ Hunter Evans
 div{
     margin: 20px;
 }
-label{
+select{
+    background-color: #3a3a3a;
+    color:#ffffff;
+    width: 90px;
+    height: 25px;
+}
+#part1 label{
     margin-right: 5px;
-    width: 85px;
+    width: 180px;
     display: inline-block;
     text-align: right;
 }
-div input{
+.radio{
+    width:50px;
+    margin-right: 100px;
+}
+#radioItems{
+    margin: 0 40px;
+}
+input[type=text]{
     background-color: #444444;
     border: none;
     color: #dbdbdb;
