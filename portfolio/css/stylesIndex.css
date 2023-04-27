@@ -1,7 +1,13 @@
-img{
-  display:block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 25px;
-  width:1470px;
+/*
+Hunter Evans
+27 April 2023
+*/
+
+main img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    width: 1470px;
 }

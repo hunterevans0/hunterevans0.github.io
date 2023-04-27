@@ -1,34 +1,46 @@
 /*
 Hunter Evans
-19 April 2023
+27 April 2023
 */
-
-#flex{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+main th{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #383838;
 }
-.image{
-  background-color: #444444;
-  border: 1px solid black;
-  margin: 15px;
-  padding: 0px 100px;
-  text-align: center;
-  width: 235px;
-  height: 377px;
+main td{
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #444444;
 }
-.image img{
-  border: 1px solid black;
+section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-.image h3{
-  background-color: #2f6b9c;
-  padding:12px;
-  border-radius: 15px;
-  transform: rotate(-6deg);
+section div{
+    background-image: radial-gradient(#646464, #444444 70%);
+    margin: 15px;
+    padding: 0px 75px;
+    text-align: center;
+    width: 235px;
+    height: 355px;
 }
-.image p{
-  padding-bottom: 6px;
+section div img{
+    border: 1px solid black;
+    height: 135px;
+}
+section div h3{
+    background-color: #2f6b9c;
+    padding: 12px;
+    border-radius: 15px;
+    transform: rotate(-6deg);
+}
+section div p{
+    padding-bottom: 6px;
 }
 p b{
-  padding-left: 349px;
+    padding-left: 349px;
 }

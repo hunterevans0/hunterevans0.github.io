@@ -1,40 +1,72 @@
 /*
 Hunter Evans
-24 April 2023
+27 April 2023
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+@font-face{
+    font-family: 'Archivo';
+      src: url('../fonts/archivo.woff') format('woff'),
+           url('../fonts/archivo.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
 div{
-  margin: 20px;
+    margin: 20px;
 }
 label{
-  margin-right: 5px;
-  width: 85px;
-  display: inline-block;
-  text-align: right;
+    margin-right: 5px;
+    width: 85px;
+    display: inline-block;
+    text-align: right;
 }
 div input{
-  background-color: #444444;
-  border: none;
-  color: #dbdbdb;
-  width: 200px;
-  height: 20px;
-  font-size: 16px;
+    background-color: #444444;
+    border: none;
+    color: #dbdbdb;
+    width: 200px;
+    height: 20px;
+    font-size: 16px;
 }
 textarea{
-  width: 750px;
-  height: 150px;
-  background-color: #3a3a3a;
-  border: none;
-  color: #dbdbdb;
-  font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
-  vertical-align: top;
+    width: 750px;
+    height: 150px;
+    background-color: #3a3a3a;
+    border: none;
+    color: #dbdbdb;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    vertical-align: top;
+}
+textarea:focus,div input:focus{
+    font-size: 1.2rem;
+    padding: 7px;
+    border: 1px solid #468bc4;
+    outline: none;
+}
+textarea,div input{
+    transition: 0.2s;
 }
 .btn{
-  background-color:#555555;
-  color: #e4e4e4;
-  height: 25px;
-  width: 75px;
-  font-size: 15px;
-  margin-right: 18px;
+    background-color: #555555;
+    color: #ffffff;
+    height: 25px;
+    width: 75px;
+    font-size: 15px;
+    margin-right: 18px;
+}
+.btn:focus{
+    border: 1px solid #468bc4;
+    outline: none;
+}
+#info{
+    font-family: 'Archivo', Arial, sans-serif;
+    font-weight: normal;
+    text-align: center;
+    font-size: 28px;
+}
+p{
+    font-family: 'Gruppo', Arial, sans-serif;
+    text-align: center;
+    font-size: 21px;
 }

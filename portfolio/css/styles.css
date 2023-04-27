@@ -1,44 +1,65 @@
 /*
 Hunter Evans
-19 April 2023
+27 April 2023
 */
 
+
+@import url('https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap');
 body{
-  background: #1E1E1E;
-  color: #EEEEEE;
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0px 225px 0px 225px;
+    background: #1E1E1E;
+    color: #e1e1e1;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+header,main{
+    margin: 0px 225px 0px 225px;
+
 }
 hr{
-  height: 1px;
-  border-width: 0;
-  color: #EEEEEE;
-  background-color: #EEEEEE;
+    height: 1px;
+    border-width: 0;
+    color: #666666;
+    background-color: #585858;
 }
 nav a{
-  text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 1px;
 }
-a:link{
-  color: #9CDCFE;
+main a,header h1 a{
+    text-decoration: none;
 }
-a:visited{
-  color: #9CDCFE;
+main a:link,header h1 a:link{
+    color: #9CDCFE;
 }
-a:hover{
-  color: #569CD6;
+main a:visited,header h1 a:visited{
+    color: #9CDCFE;
+}
+main a:hover,header h1 a:hover{
+    color: #569CD6;
 } 
-a:active{
-  color: #345f83;
-}
-nav table tr td{
-  float: left;
-  font-size: 22px;
-  margin: 0 15px 0 15px;
+main a:active,header h1 a:active{
+    color: #345f83;
 }
 nav table{
-  margin:auto;
+    background-color: #3a3a3a;
+    margin: auto;
+}
+nav table tr td a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 27px;
+    text-decoration: none;
+}
+nav table tr td a:hover{
+    background-color: #1E1E1E;
 }
 #location{
-  background-color: #569CD6;
-  color: #1E1E1E;
+    background-color: #2f6b9c;
+}
+footer{
+    text-align: center;
+}
+footer img{
+    padding: 10px
 }
