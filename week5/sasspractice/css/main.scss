@@ -1,0 +1,80 @@
+/*
+Hunter Evans
+13 April 2023
+*/
+
+$background: #B8D1EB;
+$main: #C5A98B;
+$black: #000;
+$red: #8B0000;
+$footer: #917a5c;
+
+body{
+    background-color: $background;
+    color: $black;
+    font-family: "Times New Roman", Times, serif;
+}
+#outerwrapper{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.floatleft{ 
+    float: left;
+    margin-right: 3%;
+}
+.floatright{
+    float: right;
+    margin-left: 3%;
+}
+main{
+    background-color: $main;
+    padding: 10px;
+}
+main, footer{ 
+    clear: both;
+
+}
+nav{
+    ul{
+        list-style-type: none;
+/*===========================================================================================
+    *NONE OF THIS WAS HERE BEFORE, IT COMPLETELY CHANGES THE LOOK OF THE NAVIGATION SECTION.*
+                 *THE INSTRUCTIONS SAY THAT IT SHOULD LOOK THE SAME AS BEFORE.*
+                              *I INSERTED VARIABLES WHERE THEY FIT*
+=============================================================================================*/
+/*------------------------------------------
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        background-color: $main;
+        li a{
+            display: block;
+            color: $black;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        li a.active{
+            background-color: $footer;
+            color: $black;
+        }
+-------------------------------------------*/
+    }
+}
+h1{
+    font-family: Verdana, Tahoma, sans-serif;
+}
+h2{
+    font-family:  Arial, Helvetica, serif;
+    font-weight: normal;
+    font-style: italic;
+}
+main ul{
+    list-style-image: url(../images/tomato.png);
+}
+footer{
+    font-size: .75em;
+    text-align: center;
+    background-color: $footer;
+    padding: 10px 0px 10px 0px;
+}
