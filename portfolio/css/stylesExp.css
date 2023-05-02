@@ -2,6 +2,16 @@
 Hunter Evans
 27 April 2023
 */
+main{
+    text-align: center;
+}
+main li{
+    list-style-type: none;
+    line-height: 1.5;
+}
+main table{
+    margin: auto;
+}
 main th{
     padding-top: 5px;
     padding-bottom: 5px;
@@ -9,8 +19,8 @@ main th{
 }
 main td{
     text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
     padding-top: 8px;
     padding-bottom: 8px;
     background-color: #444444;
@@ -23,10 +33,10 @@ section{
 section div{
     background-image: radial-gradient(#646464, #444444 70%);
     margin: 15px;
-    padding: 0px 75px;
+    padding: 0px 55px;
     text-align: center;
-    width: 235px;
-    height: 355px;
+    width: 255px;
+    height: 380px;
 }
 section div img{
     border: 1px solid black;
@@ -40,7 +50,4 @@ section div h3{
 }
 section div p{
     padding-bottom: 6px;
-}
-p b{
-    padding-left: 349px;
 }

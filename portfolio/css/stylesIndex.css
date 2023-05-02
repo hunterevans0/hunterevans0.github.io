@@ -9,5 +9,24 @@ main img{
     margin-right: auto;
     margin-top: 25px;
     margin-bottom: 15px;
-    width: 1470px;
+    width: 1300px;
+}
+main h3,main p{
+    text-align: center;
+    line-height: 1.5;
+}
+main h3{
+    background-color: #2c638f;
+    width: 250px;
+    margin: 20px auto;
+    padding: 7px 0;
+    border-radius: 15px;
+    transform: rotate(-6deg);
+}
+main p{
+    padding-bottom: 15px;
+}
+main hr{
+    color: #505050;
+    background-color: #505050;
 }

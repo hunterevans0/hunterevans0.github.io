@@ -2,12 +2,15 @@
 Hunter Evans
 27 April 2023
 */
-
- div{
-    width: 350px;
-    padding-left: 250px;
-    text-align: center;
-} 
 main{
     padding-right: 400;
+    padding: 0 350px;
+}
+main h2{
+    text-align: center;
+}
+ div{
+    width: 350px;
+    text-align: center;
+    margin: auto;
 }

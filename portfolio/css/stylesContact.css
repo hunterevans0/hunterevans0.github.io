@@ -10,7 +10,13 @@ Hunter Evans
            url('../fonts/archivo.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
-  }
+}
+main{
+    margin: 0 600px;
+}
+h2{
+    text-align: center;
+}
 div{
     margin: 20px;
 }
@@ -29,10 +35,12 @@ select{
 }
 .radio{
     width:50px;
-    margin-right: 100px;
+    margin-right: 50px;
 }
 #radioItems{
-    margin: 0 40px;
+    margin-bottom: 25px;
+    margin-top: 0;
+
 }
 input[type=text]{
     background-color: #444444;
@@ -43,7 +51,7 @@ input[type=text]{
     font-size: 16px;
 }
 textarea{
-    width: 750px;
+    width: 560px;
     height: 150px;
     background-color: #3a3a3a;
     border: none;
