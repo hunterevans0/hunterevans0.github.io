@@ -58,7 +58,7 @@ main ul {
 
 footer { 
 	font-size: 75%;
-    font-weight: bold;
+    font-style: italic;
 	text-align: center;
 	font-family: Georgia, 'Times New Roman', serif;
     background-image: linear-gradient(to top, rgba(144,199,227,1), rgba(255,255,255,1));
