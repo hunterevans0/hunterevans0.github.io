@@ -1,0 +1,97 @@
+/*
+Hunter Evans
+04 May 2023
+*/
+
+/*************************** Mobile ***************************/
+h2 {
+    display: none;
+}
+
+img {
+    display: none;
+}
+
+body { 
+	background-color: #FFFFFF;
+    color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+}
+header { 
+	background-color: #000033;
+    color: #FFFFFF; 
+	background-image: url(../images/sunset.jpg);
+	background-position: right;
+	background-repeat: no-repeat; 
+	line-height: 400%;
+	text-indent: 1em;
+}
+
+nav { 
+	background-color: #90C7E3;
+    font-weight: bold;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav a { 
+	text-decoration: none;
+}
+
+h1 { 
+	margin-bottom: 0; 
+    font-family: Georgia, 'Times New Roman', serif; 
+}
+	 
+h3 { 
+	color: #000033;
+    font-family: Georgia, 'Times New Roman', serif; 
+}
+
+main ul { 
+	list-style-image: url(../images/marker.gif);
+} 
+
+footer { 
+	font-size: 75%;
+    font-weight: bold;
+	text-align: center;
+	font-family: Georgia, 'Times New Roman', serif;
+    background-image: linear-gradient(to top, rgba(144,199,227,1), rgba(255,255,255,1));
+}
+	   
+dt { 
+	color: #000033; 
+}
+
+.resort { 
+	color: #5C7FA3; 
+    font-weight: bold;
+}
+
+address { 
+	font-size: 90%;
+    font-style: normal;
+}
+
+/*************************** Tablet ***************************/
+@media screen and (min-width:641px) {
+    img {
+        display: block;
+        max-width: 100%;
+    }
+    
+    nav ul li {
+        display: inline;
+    }
+
+    h2 { 
+        display: block;
+        color: #3399CC; 
+        font-family: Georgia, 'Times New Roman', serif;
+    }
+}
