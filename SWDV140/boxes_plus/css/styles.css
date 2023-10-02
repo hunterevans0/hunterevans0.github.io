@@ -1,0 +1,42 @@
+/*********************************************************************
+***
+*Original Author:                                   Hunter Evans
+*Date Created:                                      17 September 2023
+*Version:                                           3
+*Date Last Modified:                                01 October 2023
+*Modified by:                                       Hunter Evans
+*Modification log:                                  3
+
+    Version 2 - 17 September 2023 - Updated site.
+    Version 3 - 01 October 2023 - Updated site.
+***
+******************************************************************** */
+
+
+@media only screen and (min-width: 1100px) {
+    main{
+        text-align: center;
+    }
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #99D9EA;
+}
+#logo{
+    padding: 0px;
+}
+nav{
+padding-bottom: 10px;
+}
+nav ul{
+    text-align: center;
+}
+nav li{
+    display: inline;
+    margin: 0px 10px;
+}
+
+form div{
+    margin-bottom: 10px;
+}
