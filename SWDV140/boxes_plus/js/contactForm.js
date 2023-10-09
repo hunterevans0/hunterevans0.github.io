@@ -18,8 +18,8 @@
 "use strict";
 $(document).ready( () => {
 
-    // handle click on Join List button
-    $("#join_list").click( evt => {
+    // handle click on Submit button
+    $("#submit").click( evt => {
         let isValid = true;
 
         // validate the first email address
@@ -68,13 +68,13 @@ $(document).ready( () => {
     $("#reset").click( () => {
         // clear text boxes
         $("#email_1").val("");
-        $("#email_2").val("");
         $("#first_name").val("");
+        $("#message").val("");
 
         // reset span elements
         $("#email_1").next().text("*");
-        $("#email_2").next().text("*");
         $("#first_name").next().text("*");
+        $("#message").next().text("*");
         
         $("#email_1").focus();
     });
