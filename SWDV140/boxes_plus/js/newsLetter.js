@@ -2,80 +2,86 @@
 ***
 *Original Author:                                   Hunter Evans
 *Date Created:                                      17 September 2023
-*Version:                                           3
-*Date Last Modified:                                01 October 2023
+*Version:                                           4
+*Date Last Modified:                                08 October 2023
 *Modified by:                                       Hunter Evans
-*Modification log:                                  3
+*Modification log:                                  4
 
     Version 2 - 17 September 2023 - Updated site.
     Version 3 - 01 October 2023 - Updated site.
+    Version 4 - 08 October 2023 - Added jQuery to FAQ, contact, and News Letter pages. Also added some content
+                                  to the paragraph tags.
 ***
 ******************************************************************** */
 
 
 "use strict";
+$(document).ready( () => {
 
-const $ = selector => document.querySelector(selector);
+    // handle click on Join List button
+    $("#join_list").click( evt => {
+        let isValid = true;
 
-document.addEventListener("DOMContentLoaded", () => {
-    
-    $("#join_list").addEventListener("click", () => {
-        // get values user entered in textboxes
-        const email1 = $("#email_1");
-        const email2 = $("#email_2");
-        const firstName = $("#first_name");
+        // validate the first email address
+        const emailPattern = 
+            /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}\b/;
+        const email1 = $("#email_1").val().trim();
+        if (email1 == "") { 
+            $("#email_1").next().text("This field is required.");
+            isValid = false;
+        } else if ( !emailPattern.test(email1) ) {
+            $("#email_1").next().text("Must be a valid email address.");
+            isValid = false;
+        } else {
+            $("#email_1").next().text("");
+        }
+        $("#email_1").val(email1);
 
-        // create an error message and set it to an empty string
-        let errorMessage = "";
-
-        // check user entries - add text to error message if invalid
+        // validate the second email address
+        const email2 = $("#email_2").val().trim();
+        if (email2 == "") { 
+            $("#email_2").next().text("This field is required.");
+            isValid = false; 
+        } else if (email1 != email2) { 
+            $("#email_2").next().text("The email addresses must match.");
+            isValid = false;
+        } else {
+            $("#email_2").next().text("");
+        }
+        $("#email_2").val(email2);
         
-        if (email1.value == "") { 
-            email1.nextElementSibling.textContent = "First email is required.";
-            errorMessage = "error";
+        // validate the first name entry 
+        const firstName = $("#first_name").val().trim(); 
+        if (firstName == "") {
+            $("#first_name").next().text("This field is required.");
+            isValid = false;
         } else {
-            email1.nextElementSibling.textContent = "*";
+            $("#first_name").next().text("");
         }
+        $("#first_name").val(firstName);
 
-        if (email2.value == "") { 
-            email2.nextElementSibling.textContent = "Second email is required.";
-            errorMessage = "error";
-        } else {
-            email2.nextElementSibling.textContent = "*";
-        }
-
-        if (email1.value != email2.value) { 
-            email1.nextElementSibling.textContent = "Both emails must match.";
-            errorMessage = "error";
-        } else if (email1.value != "") {
-            email1.nextElementSibling.textContent = "*";
-        }
-
-        if (firstName.value == "") {
-            firstName.nextElementSibling.textContent = "First name is required.";
-            errorMessage = "error";
-        } else {
-            firstName.nextElementSibling.textContent = "*";
-        }
-
-        // submit the form if error message is an empty string
-        if (errorMessage == "") {
-            $("#email_form").submit();
-        }
+		// prevent the default action of submitting the form if any entries are invalid 
+		if (isValid == false) {
+            evt.preventDefault();
+		}
+        
     });
 
-    // this clears the form
-    $("#clear_form_2").addEventListener("click", () => {
-        $("#email_1").value = "";
-        $("#email_2").value = "";
-        $("#first_name").value = "";
+    // handle click on Reset Form button
+    $("#reset").click( () => {
+        // clear text boxes
+        $("#email_1").val("");
+        $("#email_2").val("");
+        $("#first_name").val("");
 
-        $("#email_1_error").textContent = "*";
-        $("#email_2_error").textContent = "*";
-        $("#first_name_error").textContent = "*";
-
+        // reset span elements
+        $("#email_1").next().text("*");
+        $("#email_2").next().text("*");
+        $("#first_name").next().text("*");
+        
         $("#email_1").focus();
     });
 
+    // move focus to first text box
     $("#email_1").focus();
 });
