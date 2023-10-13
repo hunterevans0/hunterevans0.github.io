@@ -17,42 +17,8 @@
 ******************************************************************** */
 
 
-@media only screen and (max-width: 1100px) {
-    #left_button {
-        margin-left: 310px;
-    }
-}
-@media only screen and (min-width: 1100px) {
-    #left_button {
-        margin-left: 850px; 
-    }
-}
-.button_panel	{
-	height: 125px;
-	padding: 50px 15px;
-	float: left;
-}
-.button_panel img {
-	width: 25px;
-	height: 25px;
-}
-#display_panel {
-	height: 125px;
-	width: 100px;
-	overflow: hidden;
-	float: left;
-}
-#image_list {
-	left: 0px;
-	position: relative;   
-    width: 900px;
-    list-style: none;  
-}
-#image_list li	{
-	float: left;
-	width: 100px;
-}
-#image_list li img	{
-	width: 95px;
-	
-}
+"use strict";
+$(document).ready( () => {
+    let date = new Date();
+    alert("Date sent: " + date);
+});
