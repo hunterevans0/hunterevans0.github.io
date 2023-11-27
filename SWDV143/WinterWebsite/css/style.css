@@ -1,0 +1,58 @@
+header {
+    position: fixed;
+    margin:auto
+}
+
+.bgimg_1, .bgimg_2, .bgimg_3, .bgimg_4, .bgimg_5 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg_1 {
+    background-image:url("../media/winter_img_1.jpg");
+    min-height: 1000px;
+}
+
+.bgimg_2 {
+    background-image:url("../media/winter_img_2.jpg");
+    min-height: 1000px;
+}
+
+.bgimg_3 {
+    background-image:url("../media/winter_img_3.jpg");
+    min-height: 1000px;
+}
+
+.bgimg_4 {
+    background-image:url("../media/winter_img_4.jpg");
+    min-height: 1000px;
+}
+
+.bgimg_5 {
+    background-image:url("../media/winter_img_5.jpg");
+    min-height: 1000px;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+main p, main ul {
+    list-style-type: none;
+    text-align: center;
+    background-color:rgb(236, 229, 220);
+}
+.bgimg_2 h1, .bgimg_5 h1 {
+    color: white;
+}
+
+li {
+    font-weight: bold;
+}
+
+form {
+    background-color:rgb(236, 229, 220);
+}
