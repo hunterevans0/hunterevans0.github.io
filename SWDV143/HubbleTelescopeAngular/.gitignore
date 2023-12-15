@@ -6,9 +6,6 @@
 /out-tsc
 /bazel-out
 
-app/**/*.js
-app/**/*.js.map
-
 # Node
 /node_modules
 npm-debug.log
@@ -41,19 +38,6 @@ bower_components/
 testem.log
 /typings
 
-connect.lock/
-coverage/
-libpeerconnection.log/
-npm-debug.log
-typings/
-.angular/
-
 # System files
 .DS_Store
 Thumbs.db
-
-.DS_Store/
-
-# e2e
-e2e/*.js
-e2e/*.map
