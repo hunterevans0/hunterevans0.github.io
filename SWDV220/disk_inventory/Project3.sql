@@ -23,7 +23,6 @@
 --					)b
 --				v2.07: Added all sample data to tables
 --				v2.08: Added a query to select unreturned disks
---				v2.09: -- Removed "GO" after "USE master" so I am in master when I drop the database.
 --				v2.09: Added a "sleeping session killer" so the database can be dropped, even if a sleeping session exists.
 
 ----------------------------------------------------------------------
